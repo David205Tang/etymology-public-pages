@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Etymology Keyword Database（词源关键词库）的隐私政策：Google API 数据的访问、使用、保存、共享、撤销授权与删除方式。">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>隐私政策 / Privacy Policy | Etymology Keyword Database</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header"><div class="container header-inner"><a class="wordmark" href="index.html">词源 <span lang="en">Etymology</span></a><nav aria-label="主导航"><a href="index.html">应用介绍</a><a href="privacy.html" aria-current="page">隐私政策</a><a href="#contact">联系</a></nav></div></header>
+  <main class="container policy" id="main">
+    <header class="policy-header"><p class="eyebrow" lang="en">Etymology Keyword Database</p><h1>隐私政策</h1><p class="policy-subtitle" lang="en">Privacy Policy</p><p class="muted">生效及更新日期：2026 年 10 月 22 日</p></header>
+    <p>本政策适用于 Etymology Keyword Database（词源关键词库，以下简称“本应用”）及其公开说明网站。本应用由内部应用管理员维护，面向内部运营团队开展运动服装关键词研究。联系邮箱：<a class="email" href="mailto:tangzhiye205@gmail.com">tangzhiye205@gmail.com</a>。</p>
+    <aside class="notice"><p><strong>当前部署状态：</strong>业务程序与数据库在管理员本机运行；Google Ads 授权与权限尚在配置，未完成真实接口调用验证。下文有关 Google Ads 数据的条款说明启用该集成后的处理方式，并不表示本应用已连接或已获 Google 审批。</p></aside>
+    <nav class="policy-toc" aria-label="政策目录"><a href="#data">处理的数据</a><a href="#purpose">用途与权限</a><a href="#storage">保存与安全</a><a href="#sharing">共享范围</a><a href="#deletion">撤销与删除</a><a href="#hosting">网页访问</a><a href="#english">English Summary</a></nav>
+    <section id="data"><h2>1. 我们处理哪些数据</h2>
+      <ul>
+        <li><strong>用户提供的业务内容：</strong>核心产品词、关键词、国家和语言选择、来源网址、分组、备注，以及 CSV 导入、人工分类与审核记录。业务内容可能包含操作者自行填写的审核人标识。</li>
+        <li><strong>Google Ads 账号与授权配置：</strong>由管理员提供的客户账号 ID、可选管理账号 ID、OAuth 客户端 ID、客户端密钥、访问令牌及刷新令牌，用于向 Google 验证身份并访问管理员授权的账号。</li>
+        <li><strong>Google Ads 返回的关键词研究数据：</strong>相关词建议、可用的平均月搜索量、广告竞争程度，以及原始接口响应中随关键词返回的其他指标。数据是否返回取决于 Google、目标市场及账号权限。</li>
+        <li><strong>实验性搜索建议数据：</strong>管理员选择现有的 Google 搜索建议来源时，应用会向该服务发送核心词或扩展查询、国家及语言参数，保存返回的建议、查询与来源记录。此来源不使用 Google Ads OAuth，也不等同于 Google Ads 官方接口。</li>
+        <li><strong>本机运行记录：</strong>采集任务、执行时间、来源查询、结果数量及错误说明，用于排查故障、去重和追溯。</li>
+        <li><strong>支持联系：</strong>如果你主动发邮件，我们会收到来信地址及你提供的内容。请勿在来信或关键词内容中提供密码、授权令牌、身份证明等敏感资料。</li>
+      </ul>
+      <p>本应用当前不为关键词研究请求访问 Gmail 邮件、Google Drive 文件、通讯录或日历，也不会要求你向管理员提供 Google 账号密码。</p>
+    </section>
+    <section id="purpose"><h2>2. 数据用途与 Google 权限</h2>
+      <p>业务内容用于关键词收集、整理、审核、导出和问题追溯。启用 Google Ads 集成后，应用会将种子关键词、国家和语言参数及必要的账号标识发送给 Google；OAuth 凭据用于获取、刷新或携带访问授权。调用 Google 时，Google 也会按其服务规则处理网络连接信息。</p>
+      <p>实验性搜索建议来源仅在管理员选择该来源并运行任务时发送搜索表达，不使用 Google Ads 授权凭据。此来源的可用性及使用条件取决于对应服务，不代表 Google 为本应用提供了官方搜索建议 API 授权。</p>
+      <p>Google Ads 集成使用 <code>https://www.googleapis.com/auth/adwords</code> 权限范围。此范围可能允许更广泛的广告账号操作；当前应用代码仅调用关键词规划相关接口，不创建或修改广告系列、不设置预算、不投放广告，不读取广告系列表现或账单资料来开展其他业务。</p>
+      <p>关键词结果及其原始响应会保存在本机，以提供搜索需求参考、分类和来源追溯。搜索量为历史聚合估计，广告竞争程度不代表 SEO 排名难度。人工或规则分类不应被理解为 Google 对采购意图、品牌使用权或词语质量的认证。</p>
+    </section>
+    <section id="storage"><h2>3. 保存地点、期限与保护措施</h2>
+      <p>当前版本将业务数据和运行记录保存在管理员运行应用的电脑内的 SQLite 数据库。CSV、JSON 导出及管理员自行复制的备份保存在其选择的位置，不会自动上传至本公开网站或 GitHub 仓库。</p>
+      <p>Google Ads 凭据可仅保留在服务进程的内存中；在 Windows 上，管理员也可选择使用 Windows 数据保护机制（DPAPI）加密保存到本机。环境变量配置及其副本由管理员另行管理。内置业务备份不包含专门存放的 OAuth 凭据，但导出文件仍应受到妥善保护。</p>
+      <p>当前没有自动到期清理机制，数据会保留至管理员按业务需要清理，或在收到有效删除请求后处理。备份及导出副本需要分别清理。Windows 加密不代表整库加密，也不能替代操作系统访问控制、设备安全和备份保护。</p>
+    </section>
+    <section id="sharing"><h2>4. 谁可以访问，是否向外共享</h2>
+      <p>应用管理员和获准使用本机业务程序的内部人员，可按实际工作安排访问相关业务内容。本公开网站不提供业务词库、备份或 Google 授权信息。当前版本不宣称已实现多用户账号或逐人权限隔离；设备及文件访问由管理员管理。</p>
+      <p>我们不出售 Google 用户数据，不将其提供给广告平台或数据经纪商，也不将其用于个性化广告或训练通用 AI 模型。除提供本政策说明的 Google API 请求、用户明确指示的导出或共享、必要的安全处理以及依法必须处理的情形外，不主动向第三方披露相关数据。</p>
+      <p>管理员自行把备份、导出文件或支持资料交给其他人员或服务时，需要另行确保具备相应权限。本应用不会自动将业务数据库同步至公开网站的托管商。</p>
+    </section>
+    <section id="deletion"><h2>5. 撤销授权与请求删除</h2>
+      <p>你可以在 Google 账号的第三方连接管理页面，撤销对 <span lang="en">Etymology Keyword Database</span> 的授权：<a href="https://myaccount.google.com/connections">管理 Google 账号的第三方连接</a>。撤销后，本应用不能继续依靠已撤销的授权取得新的访问权限；已取得的访问令牌何时失效，按 Google 的处理结果执行。</p>
+      <p><strong>撤销 Google 授权不会自动删除已经保存的本机数据。</strong>需要停止采集、删除本机凭据、关键词记录或备份时，请联系下方应用管理员，说明涉及的账号或数据范围，不要发送密码或令牌。当前删除与凭据清理由管理员人工处理，不提供公开网页的一键删除入口。</p>
+      <p>管理员需停止相关采集及服务，清理本机凭据文件、环境变量配置和必要的内存会话，并按请求范围清理数据库、导出文件与备份副本。若停止使用本应用，也应在 Google 侧撤销相关授权。为确认请求人有权处理相应数据，管理员可能要求必要的身份或权限核实。</p>
+    </section>
+    <section id="hosting"><h2>6. 公开说明网站及外部服务</h2>
+      <p>本说明网站拟使用 GitHub Pages 托管静态文件。本网站自身不设置登录表单、广告脚本、分析追踪脚本或业务数据收集表单，也不通过脚本向 Google Ads 发出查询。</p>
+      <p>访问网站时，托管商 GitHub 会为安全目的记录访问者 IP 地址，其基础设施可能处理其他必要的连接信息。相关处理受 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a> 约束。发送支持邮件及访问 Google 等外部服务，也受对应服务商政策约束。</p>
+    </section>
+    <section><h2>7. Google API 用户数据政策</h2>
+      <p>本应用对通过 Google API 获得的信息的使用，以及向其他应用传输此类信息，将遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>，包括适用的 Limited Use（限制使用）要求。我们仅为本政策明确披露的用户可见功能使用此类信息。</p>
+    </section>
+    <section><h2>8. 政策变更</h2><p>如应用的数据访问、用途、托管地点或共享方式发生实质变化，将先更新本政策，并在需要时向受影响用户说明变化和重新征求授权。当前政策的更新日期显示在页面顶部。</p></section>
+    <section id="contact"><h2>9. 联系应用管理员</h2><p>关于授权、隐私或删除请求，请联系：<a class="email" href="mailto:tangzhiye205@gmail.com">tangzhiye205@gmail.com</a>。本应用为内部业务工具，不面向儿童提供服务。</p></section>
+    <section class="english-policy" id="english" lang="en"><h2>English Summary</h2>
+      <p>Etymology Keyword Database is a locally operated, internal sportswear keyword research application. Google Ads authorization is still being configured; successful API access has not yet been verified. The public website contains information and this policy, not a public keyword database or login service.</p>
+      <p>After authorization and access approval, the application uses the Google Ads <code>adwords</code> scope to request keyword ideas and available historical metrics. It processes administrator-supplied Ads account identifiers, OAuth credentials, seed keywords, country and language choices, returned keyword metrics and raw responses, and local task records. It does not use the integration to create campaigns, set budgets, serve ads, read Gmail or Drive content, sell Google user data, personalize advertising, or train general-purpose AI models.</p>
+      <p>An existing, experimental Google search-suggestion source separately sends query expressions, country and language parameters when the administrator chooses that source and runs a task. It stores returned suggestions and provenance, does not use Ads OAuth credentials, and is not presented as an officially authorized Google Ads or search-suggestion API integration.</p>
+      <p>Operational data is stored in local SQLite files. Credentials may remain in process memory or, when selected on Windows, be saved locally using DPAPI encryption. There is no automatic expiration of stored research data. The administrator manages access, retention, exports, backups and deletion; the current version does not claim per-user account isolation. Only necessary requests are sent to Google, and operational databases and credentials are not uploaded with these public static pages.</p>
+      <p>You can revoke access through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation does not automatically delete previously stored data. Contact the administrator at <a class="email" href="mailto:tangzhiye205@gmail.com">tangzhiye205@gmail.com</a> to request local credential and data deletion, including separate export and backup copies. Do not send passwords or tokens.</p>
+      <p>The information site is intended for GitHub Pages, which logs visitor IP addresses for security. Our pages do not include analytics scripts, advertising scripts, login forms or operational data forms. Our use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including applicable Limited Use requirements. Material changes to data handling will be disclosed and renewed consent obtained where required.</p>
+    </section>
+    <p class="back-link"><a href="index.html">返回应用介绍</a></p>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span lang="en">Etymology Keyword Database</span><a href="index.html">应用介绍</a><span>更新：2026-10-22</span></div></footer>
+</body>
+</html>

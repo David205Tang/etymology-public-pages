@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Etymology Keyword Database（词源关键词库）应用介绍：面向内部运营团队的运动服装关键词研究与整理工具。">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Etymology Keyword Database | 词源关键词库</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="index.html">词源 <span lang="en">Etymology</span></a>
+      <nav aria-label="主导航">
+        <a href="index.html" aria-current="page">应用介绍</a>
+        <a href="privacy.html">隐私政策</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="intro container" aria-labelledby="app-title">
+      <p class="eyebrow">运动服装 · 内部关键词研究</p>
+      <h1 id="app-title" lang="en">Etymology Keyword Database</h1>
+      <p class="lead">词源关键词库是一款面向内部运营团队的本地网页应用，用于收集、整理和审核运动服装相关关键词，保留原始用语、来源和市场信息。</p>
+      <p class="english-summary" lang="en">A local web application for internal sportswear keyword research, organization, and review.</p>
+      <dl class="app-meta">
+        <div><dt>适用范围</dt><dd>内部运营团队</dd></div>
+        <div><dt>运行方式</dt><dd>本机服务与本地数据库</dd></div>
+        <div><dt>Google Ads 接入</dt><dd class="pending">授权与权限配置中</dd></div>
+      </dl>
+    </section>
+    <section class="container section" aria-labelledby="research-title">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="research-title">关键词研究与整理</h2></div>
+      <p>围绕核心产品词建立关键词分组，结合目标国家和语言，整理属性、工艺、人群、场景、采购意图等维度。规则分类仅作辅助，关键词仍需人工核对。</p>
+      <figure class="product-figure">
+        <img src="app-preview.png" alt="词源关键词库的实际界面，展示棒球服演示关键词、国家筛选、分类与审核状态。" width="1385" height="890" fetchpriority="high">
+        <figcaption>实际应用界面；图片使用独立的手工演示数据，不含正式业务词库，亦非 Google Ads 接口采集结果。</figcaption>
+      </figure>
+      <ul class="feature-list">
+        <li>通过采集任务使用实验性的 Google 搜索建议来源；它与 Google Ads 官方接口分开，不保证稳定可用。</li>
+        <li>手动添加和 CSV 导入关键词，保留来源说明及市场信息。</li>
+        <li>按产品目录、国家、语言、维度和审核状态筛选与整理。</li>
+        <li>管理标准词、相关词关系及复审记录，并导出业务数据备份。</li>
+      </ul>
+    </section>
+    <section class="band" aria-labelledby="google-title">
+      <div class="container section">
+        <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="google-title">Google Ads 的使用目的</h2></div>
+        <p>在管理员完成授权且 Google 项目获得所需权限后，应用计划调用 Google Ads API 的关键词规划接口：提交种子关键词、目标国家和语言，接收相关词建议及可用的历史搜索指标。</p>
+        <p>当前接入代码只执行关键词研究请求，不创建或修改广告系列，不设置投放预算，不发起广告投放。Google Ads OAuth 权限范围本身可能包含更广泛的广告账号操作能力；本应用仅为上述研究用途使用授权。</p>
+        <aside class="notice" aria-label="数据解释与接入状态">
+          <p><strong>数据解释：</strong>搜索量是历史聚合估计，不是实时或精确人数；广告竞争程度不等于自然搜索 SEO 排名难度。</p>
+          <p><strong>当前状态：</strong>Google Ads 授权与权限仍在配置，尚未完成真实接口调用验证。本应用并非 Google 官方产品，也不代表已获得 Google 认证或背书。</p>
+        </aside>
+      </div>
+    </section>
+    <section class="container section" aria-labelledby="boundary-title">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="boundary-title">公开网页与内部业务的边界</h2></div>
+      <p>本网站仅提供应用介绍、联系方式及隐私政策，不提供公开业务登录或在线词库访问。当前业务程序由管理员在本机运行；业务数据库、关键词备份和 Google 授权凭据不会随这些静态说明页发布。</p>
+      <p>如果后续调整托管方式、数据用途或共享范围，将相应更新说明，并在必要时重新取得授权。</p>
+    </section>
+    <section class="container section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 id="contact-title">联系与隐私</h2></div>
+      <p>应用管理员／用户支持：<a class="email" href="mailto:tangzhiye205@gmail.com">tangzhiye205@gmail.com</a></p>
+      <p>数据访问、授权撤销和删除请求，请参阅 <a href="privacy.html">隐私政策 / Privacy Policy</a>。</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span lang="en">Etymology Keyword Database</span><a href="privacy.html">隐私政策 / Privacy Policy</a><span>更新：2026-10-22</span></div></footer>
+</body>
+</html>
